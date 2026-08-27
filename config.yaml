@@ -1,7 +1,6 @@
 baseURL: "https://StreamOfRon.github.io/cocoscanines/"
 locale: en-us
 title: "Coco's Canines"
-theme: ""
 pygmentsUseClasses: false
 
 markup:
