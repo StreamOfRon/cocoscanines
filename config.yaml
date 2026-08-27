@@ -1,0 +1,16 @@
+baseURL: "https://StreamOfRon.github.io/cocoscanines/"
+locale: en-us
+title: "Coco's Canines"
+theme: ""
+pygmentsUseClasses: false
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+params:
+  description: "Home-based doggie daycare, boarding & walking in Arlington & Marysville, WA. Over 10 years of loving care."
+  instagram: "https://www.instagram.com/cocoscanines/"
+  threads: "https://www.threads.net/@cocoscanines"
+  facebook: "https://www.facebook.com/cocoscanines/"

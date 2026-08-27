@@ -1,0 +1,62 @@
+backend:
+  name: github
+  repo: StreamOfRon/cocoscanines
+  branch: main
+  base_url: "https://api.netlify.com"
+
+media_folder: "static/images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "content/_index.md"
+        name: "home"
+        label: "Home Page"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Hero Headline", name: "hero_headline", widget: "string"}
+          - {label: "Hero Subtext", name: "hero_subtext", widget: "text"}
+          - {label: "Hero Image", name: "hero_image", widget: "image"}
+          - {label: "Description", name: "description", widget: "string"}
+      - file: "content/services.md"
+        name: "services"
+        label: "Services"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Description", name: "description", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - file: "content/about.md"
+        name: "about"
+        label: "About"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Description", name: "description", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - file: "content/gallery.md"
+        name: "gallery"
+        label: "Gallery"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Description", name: "description", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - file: "content/contact.md"
+        name: "contact"
+        label: "Contact"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Description", name: "description", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+  - name: "site-data"
+    label: "Site Settings"
+    files:
+      - file: "data/site.yaml"
+        name: "site"
+        label: "Business Info"
+        format: "yaml"
+        fields:
+          - {label: "Phone", name: "phone", widget: "string", required: false}
+          - {label: "Address", name: "address", widget: "string"}
+          - {label: "Daycare Hours", name: "daycare_hours", widget: "string"}
+          - {label: "Boarding Hours", name: "boarding_hours", widget: "string"}
