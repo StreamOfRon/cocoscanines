@@ -1,8 +1,11 @@
 backend:
-  name: github
-  repo: StreamOfRon/cocoscanines
-  branch: main
-  base_url: "https://api.netlify.com"
+  name: test-repo
+
+# backend:
+#   name: github
+#   repo: StreamOfRon/cocoscanines
+#   branch: main
+#   base_url: "https://api.netlify.com"
 
 media_folder: "static/images/uploads"
 public_folder: "/images/uploads"
