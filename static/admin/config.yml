@@ -3,7 +3,7 @@ backend:
   repo: StreamOfRon/cocoscanines
   branch: main
   base_url: "https://gh-oauth-proxy.ron-250.workers.dev"
-  app_id: "Ov23liF4qYuWbIwNb83i"
+  app_id: "Ov23li4N36XuKCkM1a75"
 
 media_folder: "static/images/uploads"
 public_folder: "/images/uploads"
