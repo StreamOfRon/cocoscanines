@@ -61,3 +61,15 @@ collections:
           - {label: "Address", name: "address", widget: "string"}
           - {label: "Daycare Hours", name: "daycare_hours", widget: "string"}
           - {label: "Boarding Hours", name: "boarding_hours", widget: "string"}
+          - label: "Social Links"
+            name: "socials"
+            widget: "list"
+            summary: "{{fields.network}}"
+            fields:
+              - label: "Network"
+                name: "network"
+                widget: "select"
+                options: ["instagram", "facebook", "threads", "nextdoor", "yelp", "google"]
+              - label: "Profile URL"
+                name: "url"
+                widget: "string"

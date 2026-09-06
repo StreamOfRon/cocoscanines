@@ -1,0 +1,12 @@
+{{ with hugo.Data.site.socials }}
+<ul class="social-links">
+  {{ range . }}
+  <li>
+    <a href="{{ .url }}" aria-label="{{ .network | humanize }}" target="_blank" rel="noopener me">
+      {{- with resources.Get (printf "icons/%s.svg" .network) }}{{ .Content | safeHTML }}{{ else }}{{ with resources.Get "icons/link.svg" }}{{ .Content | safeHTML }}{{ end }}{{ end -}}
+      <span>{{ .network | humanize }}</span>
+    </a>
+  </li>
+  {{ end }}
+</ul>
+{{ end }}

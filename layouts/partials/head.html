@@ -41,8 +41,8 @@
   },
   "openingHours": "{{ hugo.Data.site.daycare_hours }}",
   "sameAs": [
-    "{{ .Site.Params.instagram }}",
-    "{{ .Site.Params.facebook }}"
+    {{- range $i, $s := hugo.Data.site.socials }}{{ if $i }},{{ end }}"{{ $s.url }}"
+    {{- end }}
   ]
 }
 </script>

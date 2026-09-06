@@ -57,10 +57,7 @@
     
     <div class="contact-info-item">
       <strong>Follow Us</strong>
-      <p>
-        <a href="{{ .Site.Params.instagram }}" target="_blank" rel="noopener">Instagram</a><br>
-        <a href="{{ .Site.Params.facebook }}" target="_blank" rel="noopener">Facebook</a>
-      </p>
+      {{ partial "social-links" . }}
     </div>
   </div>
 </div>
