@@ -1,11 +1,13 @@
 ---
 title: "Contact"
-description: "Get in touch with Coco's Canines to schedule a meet & greet or learn more about our dog daycare, boarding, and walking services."
+description: "Get in touch with Coco's Canines to ask a question about dog daycare, boarding, and walking services."
 ---
 
-We'd love to meet your dog! Fill out the form below and we'll get back to you within 24 hours to schedule a meet & greet.
+Question about our services, our home, or whether we're a good fit for your dog? Send us a note below and we'll reply within 24 hours.
 
-{{< contact-form >}}
+{{< tally-embed url="https://tally.so/r/CONTACT-PLACEHOLDER" title="Contact Form" height="650" >}}
+
+{{< contact-info >}}
 
 ## Ready to Book?
 

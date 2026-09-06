@@ -1,0 +1,19 @@
+<div class="contact-info">
+  <h3>Business Information</h3>
+  <div class="contact-info-item">
+    <strong>Location</strong>
+    <p>{{ hugo.Data.site.address }}</p>
+  </div>
+  <div class="contact-info-item">
+    <strong>Daycare Hours</strong>
+    <p>{{ hugo.Data.site.daycare_hours }}</p>
+  </div>
+  <div class="contact-info-item">
+    <strong>Boarding Hours</strong>
+    <p>{{ hugo.Data.site.boarding_hours }}</p>
+  </div>
+  <div class="contact-info-item">
+    <strong>Follow Us</strong>
+    {{ partial "social-links" . }}
+  </div>
+</div>
