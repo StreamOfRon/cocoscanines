@@ -49,6 +49,34 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Description", name: "description", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
+      - file: "content/book.md"
+        name: "book"
+        label: "Book (Scheduling)"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Description", name: "description", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - file: "content/boarding.md"
+        name: "boarding"
+        label: "Boarding Requests"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Description", name: "description", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - file: "content/new-pup.md"
+        name: "new-pup"
+        label: "New Pup Form"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Description", name: "description", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - file: "content/waiver.md"
+        name: "waiver"
+        label: "Liability Waiver"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Description", name: "description", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
   - name: "site_data"
     label: "Site Settings"
     files:

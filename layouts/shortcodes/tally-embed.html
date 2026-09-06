@@ -1,0 +1,9 @@
+{{ $url := .Get "url" }}{{ $title := .Get "title" | default "Form" }}{{ $height := .Get "height" | default "900" }}
+<div class="embed-block">
+  {{- if in $url "PLACEHOLDER" }}
+  <p class="embed-notice">The <strong>{{ $title }}</strong> form is being set up. Use the <a href="../contact/">contact form</a> for now and we'll send the paperwork directly.</p>
+  {{- else }}
+  <iframe class="embed-frame" src="{{ $url }}" title="{{ $title }} form" loading="lazy" style="width:100%;height:{{ $height }}px"></iframe>
+  {{- end }}
+  <p class="embed-fallback"><a href="{{ $url }}" target="_blank" rel="noopener">Open the {{ $title }} form in a new tab</a> if it doesn't appear below.</p>
+</div>
